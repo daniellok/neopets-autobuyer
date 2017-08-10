@@ -12,8 +12,8 @@ Edit these settings to alter the lower and upper bounds for the refresh rate
 (in milliseconds)
 Recommended: 3000-4000 (3-4 seconds)
 '''
-refresh_rate_lo = 4000
-refresh_rate_hi = 6000
+refresh_rate_lo = 3000
+refresh_rate_hi = 4000
 
 '''
 Edit these settings (units are in milliseconds) to determine how quickly you 
@@ -44,7 +44,7 @@ should vary based on what your refresh times are to prevent getting restock
 banned.
 
 If you're refreshing once every 3-4 seconds, this should probably be somewhere 
-around 15 minutes (900 seconds), with a 20-30 minute break.
+around 10-15 minutes (600-900 seconds), with a 20-30 minute break.
 '''
 session_duration_lo = 600
 session_duration_hi = 900
@@ -57,8 +57,8 @@ for.
 For example, if you were autobuying for 15 minutes, take a 30 minute break 
 between sessions.
 '''
-break_duration_lo = 600
-break_duration_hi = 600
+break_duration_lo = 1200
+break_duration_hi = 1800
 
 '''
 If you'd like, change this variable to include a proxy. If not, just leave it 
