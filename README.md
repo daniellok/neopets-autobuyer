@@ -1,4 +1,5 @@
 # Neopets Autobuyer
+**Update 19/10/2019: This repo was last updated in 2017, and since then, Neopets has somewhat improved their site security. As far as I know, this script no longer works. There are currently no plans to update this script.**
 
 This is a simple script to buy profitable items from the NPC shops in Neopets. I wrote it largely as a learning exercise—it actually turned out to be quite simple, and I believe you can write your own if you have some experience programming. The most crucial thing to learn would be how to use HTTP requests.
 
