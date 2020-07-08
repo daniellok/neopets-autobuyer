@@ -16,9 +16,9 @@ from requests import *
 random.seed()
 
 # Some regular expressions I use to find stuff
-shop_item_re = re.compile("</A><B>(.*?)<")
+shop_item_re = re.compile("<p class='item-name'><B>(.*?)</B>")
 price_re = re.compile("Cost: (.*?) NP")
-haggle_url_re = re.compile("\"(haggle.phtml\?.*?)\"")
+haggle_url_re = re.compile("data-link='(.*?)'>")
 captcha_re = re.compile("(/captcha_show.phtml\?.*?)\"")
 success_re = re.compile("I accept")
 
@@ -179,8 +179,7 @@ few months without any issues.
 def test_cookie(s):
   cwd = os.getcwd()
   path = os.path.join(cwd,'cookie.txt')
-  testcookie_re = re.compile('Welcome, <a href=\"/userlookup\.phtml\?user=' + 
-      config.username + '\">' + config.username)
+  testcookie_re = re.compile('hp-carousel-pet-container')
   if not os.path.isfile(path): # if there is no cookie.txt,
     print('Getting a cookie...') # make it
     s.post(login_url, 
