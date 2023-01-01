@@ -263,7 +263,7 @@ make this .txt file, consult the README
 '''
 def load_ablist(shopID):
   cwd = os.getcwd()
-  path = os.path.join(cwd, "ABlists/%i.txt" % shopID)
+  path = os.path.join(cwd, "ABLists/%i.txt" % shopID)
   f = open(path, mode='r')
   ablist = (f.read()).split(sep="\n")
   f.close()
